@@ -1,1 +1,3 @@
 #Usage
+git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+git clone https://github.com/w0ng/vim-hybrid.git
