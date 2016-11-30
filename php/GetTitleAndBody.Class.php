@@ -38,12 +38,12 @@ Class GetTitleAndBody {
 
 	//以下評価ポイント
 	private $weight = array(
-							"max_link_weight"=>"1",	 //リンク率が一番小さい（デフォルト1点）
-							"link_weight"=>"2",		 //リンクが規定値より低い（デフォルト2点）
-							"tag_weight"=>"1",		  //タグ率が一番小さい（デフォルト1点）
-							"body_weight"=>"2",		 //文字数規定値より多い（デフォルト2点）
-							"body_length_weight"=>"3"   //文字数が全DIVの中で一番多い（デフォルト3点）
-						);
+			"max_link_weight"=>"1",	 //リンク率が一番小さい（デフォルト1点）
+			"link_weight"=>"2",		 //リンクが規定値より低い（デフォルト2点）
+			"tag_weight"=>"1",		  //タグ率が一番小さい（デフォルト1点）
+			"body_weight"=>"2",		 //文字数規定値より多い（デフォルト2点）
+			"body_length_weight"=>"3"   //文字数が全DIVの中で一番多い（デフォルト3点）
+		);
 
 	private $url;		   //対象のURL
 	private $title;		 //Htmlのタイトルが入る
@@ -187,10 +187,8 @@ Class GetTitleAndBody {
 	function get($method) {
 		if ($this->$method) {
 			return $this->$method;
-
 		} else {
 			return false;
-
 		}
 	}
 }
